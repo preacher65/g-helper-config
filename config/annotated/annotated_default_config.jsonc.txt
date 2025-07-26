@@ -1,0 +1,26 @@
+{
+  // Sets the active performance mode (GUI "Mode")
+  // 0 = Balanced, 1 = Turbo, 2 = Silent, 4 = Manual/custom
+  "performance_mode": 0,
+
+  // Tracks how many times G-Helper has launched (usually unused)
+  "start_count": 0,
+
+  // Sets the performance mode to use when on AC power
+  // 0 = Balanced, 1 = Turbo, 2 = Silent, 4 = Manual/custom
+  "performance_1": 0,
+
+  // Sets the performance mode to use when on battery 
+  // 0 = Balanced, 1 = Turbo, 2 = Silent, 4 = Manual/custom 
+  "performance_0": 0,
+
+  // Sets the global GPU mode:
+  // 0 = Eco (iGPU only), 1 = Standard (MS Hybrid), 2 = Ultimate (dGPU only)
+  "gpu_mode": 1,
+
+  // Auto-detected screen refresh rate (Hz) for the laptop panel
+  "frequency": -1,
+
+  // Display overdrive state (0 = off, 1 = on), likely unsupported on this device
+  "overdrive": -65536
+}

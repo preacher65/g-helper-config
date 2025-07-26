@@ -1,0 +1,65 @@
+{
+  // Sets the active performance mode (GUI "Mode")
+  // 0 = Balanced, 1 = Turbo, 2 = Silent, 4 = Manual/custom
+  "performance_mode": 0,
+
+  // Tracks how many times G-Helper has launched (usually unused)
+  "start_count": 0,
+
+  // Sets the performance mode to use when on AC power
+  // 0 = Balanced, 1 = Turbo, 2 = Silent, 4 = Manual/custom
+  "performance_1": 0,
+
+  // Sets the performance mode to use when on battery 
+  // 0 = Balanced, 1 = Turbo, 2 = Silent, 4 = Manual/custom 
+  "performance_0": 0,
+
+  // Sets the global GPU mode:
+  // 0 = Eco (iGPU only), 1 = Standard (MS Hybrid), 2 = Ultimate (dGPU only)
+  "gpu_mode": 1,
+
+  // Auto-detected screen refresh rate (Hz) for the laptop panel
+  "frequency": -1,
+
+  // Display overdrive state (0 = off, 1 = on), likely unsupported on this device
+  "overdrive": -65536,
+
+  // Lighting settings for keyboard states (awake/boot/sleep/shutdown)
+  "keyboard_awake": 1,
+  "keyboard_boot": 1,
+  "keyboard_sleep": 0,
+  "keyboard_shutdown": 0,
+
+  // Lighting for the lightbar (center status LED)
+  "keyboard_awake_bar": 1,
+  "keyboard_boot_bar": 1,
+  "keyboard_sleep_bar": 1,
+  "keyboard_shutdown_bar": 1,
+
+  // Lighting for the lid (if applicable)
+  "keyboard_awake_lid": 1,
+  "keyboard_boot_lid": 1,
+  "keyboard_sleep_lid": 1,
+  "keyboard_shutdown_lid": 1,
+
+  // Lighting for the ROG logo (lid logo LED if available)
+  "keyboard_awake_logo": 1,
+  "keyboard_boot_logo": 1,
+  "keyboard_sleep_logo": 1,
+  "keyboard_shutdown_logo": 1,
+
+  // Fixes GPU state issues when switching modes (recommended)
+  "gpu_fix": 1,
+
+  // Kills background GPU-using apps when switching to Eco mode
+  "kill_gpu_apps": 1,
+
+  // Enables clamshell mode toggle behavior (for lid-close actions)
+  "toggle_clamshell_mode": 1,
+
+  // Sets the battery charge cap percentage to preserve battery health
+  "charge_limit": 80,
+
+  // Temporarily overrides charge limit to allow full charge (1 = full, 0 = off)
+  "charge_full": 0
+}
