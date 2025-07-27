@@ -26,5 +26,8 @@
   "kill_gpu_apps": 1,
   "toggle_clamshell_mode": 1,
   "charge_limit": 80,
-  "charge_full": 0
+  "charge_full": 0,
+  "gpu_auto": 1,
+  "mid_fan": 1,
+  "xgm_fan": 0
 }

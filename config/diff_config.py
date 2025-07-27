@@ -1,3 +1,4 @@
+from datetime import datetime
 import json
 import sys
 from pathlib import Path
@@ -7,9 +8,11 @@ from rich.table import Table
 import csv
 import os
 
+
 def load_json(file_path):
     with open(file_path, 'r') as f:
         return json.load(f)
+
 
 def compare_dicts(base, compare):
     diffs = []
@@ -21,6 +24,7 @@ def compare_dicts(base, compare):
             diffs.append((key, val1, val2))
     return diffs
 
+
 def save_markdown(diffs, file1, file2, output_path):
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(f"# 🔍 G-Helper Config Diff Report\n\n")
@@ -30,12 +34,14 @@ def save_markdown(diffs, file1, file2, output_path):
         for key, v1, v2 in diffs:
             f.write(f"| `{key}` | `{v1}` | `{v2}` |\n")
 
+
 def save_csv(diffs, output_path):
     with open(output_path, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerow(["Key", "File 1", "File 2"])
         for row in diffs:
             writer.writerow(row)
+
 
 def main():
     if len(sys.argv) != 3:
@@ -75,13 +81,15 @@ def main():
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Save to markdown and CSV in output directory
-    md_path = output_dir / f"{name1}_vs_{name2}.md"
-    csv_path = output_dir / f"{name1}_vs_{name2}.csv"
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    md_path = output_dir / f"{name1}_vs_{name2}_{timestamp}.md"
+    csv_path = output_dir / f"{name1}_vs_{name2}_{timestamp}.csv"
     save_markdown(diffs, file1, file2, md_path)
     save_csv(diffs, csv_path)
 
     print(f"📄 Markdown saved to: [cyan]{md_path}[/cyan]")
     print(f"📊 CSV saved to: [cyan]{csv_path}[/cyan]")
+
 
 if __name__ == "__main__":
     main()
