@@ -8,6 +8,9 @@ config/archive/
 # VS Code settings (optional, if using local workspace config)
 .vscode/
 
+# Diff files
+docs/diffs/
+
 # OS junk files
 .DS_Store
 Thumbs.db
