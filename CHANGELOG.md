@@ -1,39 +1,28 @@
-# 📦 Changelog
+# 📦 G-Helper Config — Changelog
 
-All notable changes to this project will be documented here.
+All notable changes to this project are documented in this file using [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) format.
 
----
+## v1.0.0 — Initial Release
 
-## [v1.0.0] - Initial Release
+### 🎮 Profiles
+- 🧩 Defined `default_config.json`, `personal_config.json`
+- ⚙️ Added annotated versions of both configs in `/config/annotated/`
 
-**Released:** YYYY-MM-DD
+### 🔧 Config Management
+- 📁 Organized project folder structure
+- 🗃️ Saved `config_reordered_patched.json` as current working setup
+- 🧠 Documented default G-Helper settings for Balanced, Turbo, and Silent
 
-### 🎯 Summary
+### 🧰 Tooling
+- 🧮 Initial version of Python diff tool: `tools/diff_config.py`
+- 📊 Outputs Markdown + CSV diffs to `docs/diffs/`
+- 🔧 Handles CRLF/LF consistency via `.gitattributes`
 
-Initial upload of fully structured G-Helper configuration project for the ASUS Zephyrus G14 (2024, RTX 4070).
+### 📘 Documentation
+- 📁 Added folder structure and usage notes to `README.md`
+- 🧠 Documented GPU mode behavior and profile switching
+- 🛠 Clarified role of default vs personal configs
 
-### ✅ Added
-
-- 🔧 `config.json` with custom profiles:
-  - Balanced Plus
-  - Turbo / Gaming
-  - Silent Plus
-  - Eco
-  - Quiet Gaming
-- 💾 `default_config.json` and `personal_config.json` baselines
-- 📝 Annotated versions of both configs (`.jsonc.txt`)
-- 📚 Documentation scaffolding:
-  - `README.md` (repo overview)
-  - `PROFILE_OVERVIEW.md`
-  - `FAN_CURVES.md`
-- 🧰 Tools directory ready for diff scripts
-- ⚙️ Profile tuning includes:
-  - Custom fan curves (max RPM-aware)
-  - CPU/GPU power limits
-  - GPU undervolting support
-  - Battery charge cap (80%)
-  - Auto GPU switching (`gpu_auto: 1`)
-
----
-
-> Tip: Future versions will track tuning changes, new profiles, or fan curve improvements.
+### 🧪 Dev Setup
+- ✅ Project ready for GitHub workflows
+- ⚙️ Supports local VS Code + Python 3.13 dev stack
