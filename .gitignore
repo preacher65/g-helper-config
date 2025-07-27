@@ -1,0 +1,17 @@
+# Byte-compiled / cache files
+__pycache__/
+*.pyc
+
+# Backup / archive scripts (excluded from version control)
+config/archive/
+
+# VS Code settings (optional, if using local workspace config)
+.vscode/
+
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Log files or temp output
+*.log
+*.tmp
