@@ -1,0 +1,5 @@
+# Use LF for all text files
+* text=auto eol=lf
+
+# Explicit rules (optional)
+*.json text eol=crlf
