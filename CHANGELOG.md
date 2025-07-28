@@ -2,6 +2,18 @@
 
 All notable changes to this project are documented in this file using [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) format.
 
+## Version 1.0.1 – Power Mode Correction (2025-07-28)
+
+This version corrects the Windows Power Mode setting for the Turbo profile (`_1`):
+
+- 🔧 **Turbo Profile (_1):**
+  - ✅ Set to **Best Performance** (slider)
+  - 🛠️ Removed incorrect legacy `High Performance` power plan override (`powermode_1`)
+
+No other profile changes. All power, fan, and thermal settings from v1.0 remain intact.
+
+---
+
 ## Version 1.0.1 – Minimum Fan Duty Patch (2025-07-28)
 
 This patch enforces an 8% minimum fan speed for profiles Balanced (`_0`) and Quiet Gaming (`_3`), improving fan startup reliability and long-term endurance.
