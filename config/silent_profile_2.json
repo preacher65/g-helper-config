@@ -1,0 +1,22 @@
+{
+  "auto_apply_2": 1,
+  "auto_apply_power_2": 1,
+  "auto_boost_2": 1,
+  "auto_uv_2": 1,
+  "cpu_temp_2": 98,
+  "cpu_uv_2": 0,
+  "fan_profile_cpu_2": "1E-3C-41-42-47-4B-4C-62-00-03-0C-0C-16-22-22-29",
+  "fan_profile_gpu_2": "1E-3C-41-42-47-4B-4C-62-00-08-11-11-1D-26-26-2D",
+  "fan_profile_mid_2": "1E-3C-41-42-47-4B-4C-62-00-03-0C-0C-16-22-22-29",
+  "gpu_boost_2": 25,
+  "gpu_clock_limit_2": 3000,
+  "gpu_core_2": 0,
+  "gpu_memory_2": 0,
+  "gpu_power_2": 10,
+  "gpu_temp_2": 87,
+  "igpu_uv_2": 0,
+  "limit_cpu_2": 80,
+  "limit_fast_2": 80,
+  "limit_slow_2": 80,
+  "limit_total_2": 80
+}
